@@ -122,6 +122,67 @@
             transform: translateX(-100%); /* Bring into view */
             opacity: 1;
         }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .scene {
+                width: 150px;
+                height: 300px;
+            }
+
+            .button {
+                width: 200px;
+                height: 80px;
+                font-size: 18px;
+            }
+
+            .main-button {
+                width: 250px;
+                top: 80px;
+                left: 50%;
+                transform: translateX(-50%) translateZ(100px);
+            }
+
+            .top-button, .bottom-button {
+                width: 250px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .scene.clicked .main-button {
+                transform: translateY(300px) translateZ(100px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .scene {
+                width: 100px;
+                height: 200px;
+            }
+
+            .button {
+                width: 150px;
+                height: 60px;
+                font-size: 16px;
+            }
+
+            .main-button {
+                width: 200px;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%) translateZ(100px);
+            }
+
+            .top-button, .bottom-button {
+                width: 200px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .scene.clicked .main-button {
+                transform: translateY(200px) translateZ(100px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -133,7 +194,7 @@
         </div>
         <div class="button interior-button bottom-button">
             <div class="front">Password</div>
-            <div class="back">password expired niggas</div>
+            <div class="back">balaeforquizletonly682</div>
             <!-- Image popup -->
             <div class="image-popup"></div>
         </div>
